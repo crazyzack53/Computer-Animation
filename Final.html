@@ -2,26 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Final Project – Short Animation</title>
+  <title>Final Project – Asteroid Chase</title>
   <style>
     body { font-family: Arial, sans-serif; background:#111; color:#eee; padding:2em; line-height:1.6; }
-    h1, h2, h3 { color:#ff8800; margin-top:0.2em; }
+    h1, h2, h3 { color:#ff8800; margin-top:0; }
     a { color:#66ccff; text-decoration:none; }
     a:hover { text-decoration:underline; }
     iframe { max-width:100%; margin:1em 0; }
-    img { margin:0.75em 0; border:2px solid #333; border-radius:6px; max-width:100%; }
-    ul { margin-left:1.25em; }
+    img { margin:0.75em 0; border:2px solid #333; border-radius:4px; max-width:100%; }
     .topnav { margin-bottom:1em; }
     .topnav a { margin-right:1em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
     .meta { color:#bbb; }
-    .card { background:#151515; border:1px solid #333; border-radius:8px; padding:1.1em 1.25em; margin:1em 0; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
-    .small { color:#bbb; font-size:0.95em; }
-    .note { border-left:4px solid #ff8800; padding-left:1em; }
+    .card { background:#151515; border:1px solid #333; border-radius:6px; padding:1em 1.25em; margin:1em 0; }
+    .note { background:#1b1b1b; border-left:4px solid #ff8800; padding:1em 1.25em; border-radius:6px; }
   </style>
 </head>
 <body>
-
   <div class="topnav">
     <a href="index.html">⟵ Back to Home</a>
     <a href="project1.html">Project 1</a>
@@ -31,138 +28,98 @@
     <a href="project5.html">Project 5</a>
   </div>
 
-  <h1>Final Project – Short Animation</h1>
+  <h1>Final Project – Asteroid Chase</h1>
   <p class="meta">
     <strong>Name:</strong> Isaac Harfst<br>
     <strong>Course:</strong> Computer Science 417 – Computer Animation<br>
-    <strong>Term:</strong> Fall 2025<br>
-    <strong>Date:</strong> INSERT DATE HERE
+    <strong>Date:</strong> 12/16/26 at 4:00 AM
   </p>
 
   <div class="card">
     <h2>Final Animation</h2>
-    <p class="small">Embedded link to the final animation (YouTube/Vimeo), per the project requirements.</p>
-
-    <!-- Replace YOUR_VIDEO_ID with the YouTube video ID -->
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      frameborder="0" allowfullscreen></iframe>
-
-    <!-- Optional: also include a normal link -->
-    <p><a href="YOUR_YOUTUBE_URL" target="_blank">Open on YouTube →</a></p>
-  </div>
-
-  <div class="card">
-    <h2>Storyboards</h2>
-    <p class="small">Storyboards + written description are required for the final project webpage.</p>
-
-    <!-- Placeholder storyboard image -->
-    <img src="images/FINAL_storyboard.png" alt="Storyboard">
-
-    <h3>Written Description</h3>
     <p>
-      The Millennium Falcon is being chased by TIE fighters after its blasters stop working while the hyperdrive is
-      charging/being repaired. To lose the pursuers, the Falcon dives into an asteroid field, narrowly avoiding
-      collisions and nearly clipping several asteroids before escaping.
+      The Millennium Falcon is being chased by TIE fighters while its hyperdrive is charging or being repaired.
+      With its blasters offline, the Falcon flies into an asteroid field to try to lose the pursuing ships,
+      narrowly avoiding impacts before making a last-second escape.
     </p>
+
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/EBIkp0kuacI"
+      frameborder="0" allowfullscreen></iframe>
   </div>
 
   <div class="card">
-    <h2>Three Frames from the Animation</h2>
-    <p class="small">Pick frames that show different “beats” (setup, danger moment, escape/climax).</p>
+    <h2>Asteroid Physics Demonstration</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/OXoa7f0h-eg"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
 
+  <div class="card">
+    <h2>Frames / Stills</h2>
     <div class="grid">
-      <div>
-        <img src="images/FINAL_frame1.png" alt="Frame 1">
-        <p class="small"><strong>Frame 1:</strong> INSERT CAPTION (optional)</p>
-      </div>
-      <div>
-        <img src="images/FINAL_frame2.png" alt="Frame 2">
-        <p class="small"><strong>Frame 2:</strong> INSERT CAPTION (optional)</p>
-      </div>
-      <div>
-        <img src="images/FINAL_frame3.png" alt="Frame 3">
-        <p class="small"><strong>Frame 3:</strong> INSERT CAPTION (optional)</p>
-      </div>
+      <img src="images/wide.png">
+      <img src="images/asteroid.png">
+      <img src="images/lazer.png">
     </div>
   </div>
 
   <div class="card">
-    <h2>Project Overview</h2>
+    <h2>Storyboard</h2>
+    <img src="images/board.PNG">
+  </div>
+
+  <div class="card">
+    <h2>Project Breakdown</h2>
     <p>
-      This final animation is a short Star Wars-inspired chase sequence built around realistic lighting and physics.
-      The Falcon uses the asteroid field as cover while the TIE fighters pursue, creating a sequence of near-misses
-      and a narrow escape.
+      I spent a significant amount of time on this project, roughly estimated between 30 and 50 hours total.
+      About half of that time went into modeling the Millennium Falcon, along with building and texturing
+      the asteroid field. The remaining time was focused on lighting, physics, animation, rendering,
+      and post-processing.
+    </p>
+    <p>
+      Rendering took a long time due to output issues, which required multiple full re-renders.
+      I also spent approximately 3–4 hours on additional post-processing work, especially audio,
+      to make the final result feel more cinematic and complete.
     </p>
   </div>
 
   <div class="card">
-    <h2>Work Summary</h2>
-    <p>
-      I spent a large amount of time on this project (roughly 30–50 hours total). About half of that time went into
-      modeling the Millennium Falcon, plus building and texturing the asteroid field. The other half was focused on
-      lighting, physics/dynamics, and camera animation. I also spent about 3–4 hours on audio/post-processing.
-    </p>
-    <p>
-      This project ended up being one of the most fun assignments I’ve done in the class — I’m a big Star Wars fan,
-      and I really enjoyed getting to bring my idea to life.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Problems Encountered & How I Solved Them</h2>
+    <h2>Problems Encountered & Solutions</h2>
     <ul>
-      <li>
-        <strong>Texturing (Falcon looked flat / too clean):</strong>
-        I spent a lot of time in Hypershade experimenting with nodes and combining maps until I could build a more
-        weathered, believable look.
-      </li>
-      <li>
-        <strong>Physics issues (no collisions + gravity wouldn’t turn off):</strong>
-        The solution was connecting Bullet properly to the MASH dynamics setup. After that, I could disable gravity
-        and get collisions working.
-      </li>
-      <li>
-        <strong>Modeling challenges on the Falcon:</strong>
-        Many issues came from extrusions behaving differently depending on component mode. I improved by learning when
-        to select vertices vs edges vs faces before extruding/beveling.
-      </li>
-      <li>
-        <strong>Asteroids didn’t look realistic enough:</strong>
-        I added a cloud/noise-style node in the material to create a bumpier surface and break up the silhouette.
-      </li>
+      <li><strong>Texturing:</strong> Achieving a believable, weathered look on the Falcon was challenging.
+          This was solved through extensive work in Hypershade, combining multiple texture nodes.</li>
+      <li><strong>Physics:</strong> Initially, collisions did not function correctly and gravity could not be disabled.
+          Connecting Bullet properly through the MASH dynamics system resolved both issues.</li>
+      <li><strong>Modeling:</strong> Many modeling challenges came from incorrect component selection.
+          Learning when to use vertices, edges, or faces significantly improved workflow.</li>
+      <li><strong>Asteroid realism:</strong> Adding a cloud node to the asteroid materials helped break up
+          the surface and improve visual realism.</li>
     </ul>
   </div>
 
-  <div class="card">
-    <h2>Assets / Credits</h2>
-    <ul>
-      <li>
-        <strong>TIE Fighter model:</strong> Used one online model due to time constraints.
-        <em>INSERT SOURCE LINK + CREATOR NAME HERE</em>
-      </li>
-      <li>
-        <strong>Audio:</strong> INSERT SOURCE(S) (if any) or “Edited/mixed by me.”
-      </li>
-    </ul>
-  </div>
-
-  <div class="card note">
+  <div class="note">
     <h2>Note to Professor</h2>
     <p>
-      I apologize for turning this in a bit late. I had to go home near the end of the project, and rendering took much
-      longer than expected. I also ran into output issues and ended up re-rendering the animation three times to fix
-      how it was coming out.
+      I apologize for turning this project in slightly late. I had to return home during the final phase,
+      and rendering took longer than expected due to technical issues that required multiple re-renders.
     </p>
     <p>
-      I also want to note that I used one online model (the TIE fighter) because I ran out of time to model and texture
-      everything from scratch — I spent a huge portion of the time on the Millennium Falcon and wanted to make sure it
-      looked as good as possible.
+      I also used one online model (a TIE fighter) because I ran out of time to model and texture every asset
+      from scratch. I spent a large amount of time on the Millennium Falcon and wanted to prioritize its quality.
     </p>
     <p>
-      Overall, I’ve had a lot of fun in this class, and this final project especially was a blast to work on.
+      I have genuinely enjoyed this class, especially this project. I love Star Wars, and getting to fully
+      realize this idea was extremely fun and rewarding.
     </p>
   </div>
 
+  <div class="card">
+    <h2>Credits / Attributions</h2>
+    <ul>
+      <li>TIE fighter model: <a href="https://sketchfab.com/3d-models/star-wars-tieln-fighter-79d9403f15334c129ea5454daffe6b5c" target="_blank" rel="noopener">Sketchfab</a></li>
+      <li>Sound effects sourced from the Star Wars films.</li>
+    </ul>
+  </div>
 </body>
 </html>
